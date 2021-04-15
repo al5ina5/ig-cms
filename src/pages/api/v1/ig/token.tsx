@@ -1,8 +1,9 @@
 import axios from 'axios'
 import qs from 'qs'
-import InstagramToken from '../../../lib/Models/InstagramToken'
+import connectDB from '../../../../lib/middleware/db'
+import InstagramToken from '../../../../lib/Models/InstagramToken'
 
-export default async function (req, res) {
+async function Endpoint(req, res) {
     try {
         const { code } = req.body
 
@@ -26,6 +27,9 @@ export default async function (req, res) {
 
         res.json(storeToken)
     } catch (error) {
+        console.log(error)
         res.status(500).json(error?.response?.data || 'Error.')
     }
 }
+
+export default connectDB(Endpoint)

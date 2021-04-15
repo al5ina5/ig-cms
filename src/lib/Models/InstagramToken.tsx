@@ -9,6 +9,7 @@ const InstagramTokenSchema = new Schema({
         type: Date,
         default: Date.now()
     },
+    email: String,
     access_token: String,
     token_type: String,
     expires_in: Number

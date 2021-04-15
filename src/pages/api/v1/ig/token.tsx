@@ -6,6 +6,7 @@ import InstagramToken from '../../../../lib/Models/InstagramToken'
 async function Endpoint(req, res) {
     try {
         const { code } = req.body
+        const { email } = req.body
 
         const { data: shortToken } = await axios.post(
             'https://api.instagram.com/oauth/access_token',
@@ -22,7 +23,7 @@ async function Endpoint(req, res) {
 
         const { data: longToken } = await axios.get(`https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=${process.env.INSTAGRAM_CLIENT_SECRET}&access_token=${shortToken.access_token}`)
 
-        const storeToken = new InstagramToken(longToken)
+        const storeToken = new InstagramToken({ ...longToken, email })
         await storeToken.save()
 
         res.json(storeToken)

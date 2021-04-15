@@ -51,7 +51,7 @@ export default function Example() {
                                     </a>
                                 </div>
                             </form>
-                            {/* <div className="mt-6">
+                            <div className="mt-6">
                                 <div className="inline-flex items-center divide-x divide-gray-300">
                                     <div className="flex-shrink-0 flex pr-5">
                                         <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
@@ -61,14 +61,10 @@ export default function Example() {
                                         <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
                                     </div>
                                     <div className="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3">
-                                        <span className="font-medium text-gray-900">Rated 5 stars</span>
-                                        {' '}
-                                        by over
-                                        {' '}
-                                        <span className="font-medium text-indigo-600">500 beta users</span>
+                                        <span className="font-medium text-gray-900">Rated 5 stars</span> by over <span className="font-medium text-indigo-600">500 beta users</span>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>

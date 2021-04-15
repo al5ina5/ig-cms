@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { connect } from 'mongoose'
 import moment from 'moment'
-import connectDB from '../../../../lib/middleware/db'
-import InstagramToken from '../../../../lib/Models/InstagramToken'
+import connectDB from '../../../lib/middleware/db'
+import InstagramToken from '../../../lib/Models/InstagramToken'
 
 async function Endpoint(req, res) {
     try {

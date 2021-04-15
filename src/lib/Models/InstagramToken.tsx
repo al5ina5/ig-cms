@@ -14,7 +14,7 @@ const InstagramTokenSchema = new Schema({
     token_type: String,
     expires_in: Number
 })
-
+// @ts-ignore
 mongoose.models = {}
 
 const InstagramToken = model('InstagramToken', InstagramTokenSchema)

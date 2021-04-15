@@ -32,7 +32,7 @@ async function Endpoint(req, res) {
             paging: {
                 cursors: posts?.paging?.cursors,
                 next: posts?.paging?.cursors?.after ? `http://localhost:3002/api/v1/6077f5c21f05ab000949e5af/posts/after/${posts.paging.cursors.after}` : null,
-                previous: posts?.paging?.cursors?.after ? `http://localhost:3002/api/v1/6077f5c21f05ab000949e5af/posts/before/${posts.paging.cursors.after}` : null
+                previous: posts?.paging?.cursors?.before ? `http://localhost:3002/api/v1/6077f5c21f05ab000949e5af/posts/before/${posts.paging.cursors.before}` : null
             }
         })
     } catch (error) {

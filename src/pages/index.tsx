@@ -26,7 +26,7 @@ export default function Example() {
                             </div>
                             <div className="mt-6 sm:max-w-xl">
                                 <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Instagram as a CMS</h1>
-                                <p className="mt-6 text-xl text-gray-500">Your Instagram content turned into a headless API.</p>
+                                <p className="mt-6 text-xl text-gray-500">Your Instagram content turned into a headless API in less than 5 seconds. Zero config.</p>
                             </div>
                             <form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex">
                                 <div className="min-w-0 flex-1">

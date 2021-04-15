@@ -10,6 +10,10 @@ export default function App() {
                         <p className="font-mono">cd templated</p>
                     </div>
                 </div>
+
+                <a href={`https://api.instagram.com/oauth/authorize?client_id=${process.env.INSTAGRAM_CLIENT_ID}&redirect_uri=https://ig-cms.vercel.app/callback&response_type=code&scope=user_profile,user_media`}>
+                    Login with Instagram
+                </a>
             </div>
         </div>
     )
